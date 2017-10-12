@@ -82,7 +82,7 @@ public class project1{
 		for (int i=0; i<grid.length; i++) {
 			for (int j=0; j<grid[0].length; j++) {
 				if (grid[i][j]==pent) {
-					grid[i][j]=0;
+					grid[i][j]='0';
 				}
 			}
 		}
