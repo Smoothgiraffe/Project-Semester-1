@@ -69,7 +69,7 @@ public class project1{
 			System.out.println("Definetely not possible!");
 		}
 		else if(area==5){
-			System.out.println("True."); 
+			System.out.println("True.");
 		}
 
 	}
@@ -77,4 +77,14 @@ public class project1{
 	/*public static void placePentomino(char[][] grid, char[][][][] pentSet, int[] pentsUsed){
 
 	}*/
+
+	public static void removePentomino(char[][] grid, char pent) {
+		for (int i=0; i<grid.length; i++) {
+			for (int j=0; j<grid[0].length; j++) {
+				if (grid[i][j]==pent) {
+					grid[i][j]=0;
+				}
+			}
+		}
+	}
 }
